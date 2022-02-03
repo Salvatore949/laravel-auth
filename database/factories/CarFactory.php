@@ -8,7 +8,7 @@ use Faker\Generator as Faker;
 $factory->define(Car::class, function (Faker $faker) {
     return [
         'name' => $faker -> words(3,true),
-        'manifactury'=> $faker -> words(3,true),
-        'displacement'=> $faker -> numberBetween(50,1000),
+        'manifactury' => $faker -> words(3,true),
+        'displacement' => $faker -> numberbetween(50,1000),
     ];
 });
